@@ -1,17 +1,17 @@
 {% set name = "zfit-physics" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/zfit/zfit-physics/archive/{{ version }}.tar.gz
-  sha256: d2215653fc352ea69197230e2db062fb90effc3b453175323a5318887f4bffef
+  sha256: e1effb72ec61ce1f3afa600d706ea9ec043badfa6515b197358d2588e207aa49
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
 requirements:
