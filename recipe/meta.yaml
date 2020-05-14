@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/zfit/zfit-physics/archive/{{ version }}.tar.gz
-  sha256: e1effb72ec61ce1f3afa600d706ea9ec043badfa6515b197358d2588e207aa49
+  sha256: 1fc7f77e220dc526c04bec04450454f758d78dcf4bfe3e7ef49cb9e01a937e2d
 
 build:
   number: 0
