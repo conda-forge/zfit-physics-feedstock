@@ -24,7 +24,7 @@ requirements:
     - python >=3.6,<3.8
     - numpy
     - zfit >=0.5.2
-    # Workaround for https://github.com/conda-forge/tensorflow-probability-feedstock/pull/11 
+    # Workaround for https://github.com/conda-forge/tensorflow-probability-feedstock/pull/11
     - decorator
     - cloudpickle >=0.6.1
 
