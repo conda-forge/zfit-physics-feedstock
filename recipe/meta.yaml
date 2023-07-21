@@ -1,5 +1,5 @@
 {% set name = "zfit-physics" %}
-{% set version = "0.0.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/zfit/zfit-physics/archive/{{ version }}.tar.gz
-  sha256: 1fc7f77e220dc526c04bec04450454f758d78dcf4bfe3e7ef49cb9e01a937e2d
+  sha256: 46f212f2956833daf8bdcf166685a7888db691bfd0795248d23e297bc9c1ac2d
 
 build:
   number: 0
