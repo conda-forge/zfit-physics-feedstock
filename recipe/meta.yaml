@@ -17,16 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.8
+    - python >=3.8,<3.12
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.6,<3.8
+    - python >=3.8,<3.12
     - numpy
-    - zfit >=0.5.1
-    # Workaround for https://github.com/conda-forge/tensorflow-probability-feedstock/pull/11
-    - decorator
-    - cloudpickle >=0.6.1
+    - zfit >=0.13.0
 
 test:
   imports:
