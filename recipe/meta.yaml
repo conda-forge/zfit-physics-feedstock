@@ -41,5 +41,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - ikrommyd
     - chrisburr
     - jonas-eschle
