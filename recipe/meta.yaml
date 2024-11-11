@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8,<3.12
-    - setuptools_scm
-    - setuptools_scm_git_archive
+    - python >=3.9,<3.13
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.8,<3.12
+    - python >=3.9,<3.13
     - numpy
-    - zfit >=0.13.0
+    - zfit >=0.23.0
 
 test:
   imports:
