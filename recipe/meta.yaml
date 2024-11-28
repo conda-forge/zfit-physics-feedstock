@@ -10,22 +10,24 @@ source:
   sha256: 6d302dd1c533f8c5b77254b2824d36f8cc7e05065a23acf0f9cdacc9584c7baf
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - numpy
     - zfit >=0.23.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - zfit_physics
     - zfit_physics.models
